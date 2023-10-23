@@ -7,13 +7,14 @@ import SearchBar from './SearchBar'
 const NavBar = () => {
   return (
     <Stack 
-    direction="row"
+
     alignItems="center"
     p={2}
-sx={{positon:'sticky' ,backgroundColor:'#000',top:0,justifyContent:'space-between'}}
+sx={{positon:'sticky' ,backgroundColor:'#000',top:0,justifyContent:'space-between', flexDirection:{md:'column'}
+}}
     >
-<Link to='/' style={{display:"flex",alignItems:'center'}}>
-  <img src={logo} alt="logo" height={45} />
+<Link to='/' style={{display:"flex",alignItems:'center',margin:10} } ClassName='ic'>
+  <img src={logo} alt="logo" width={200} />
   </Link>      
 <SearchBar/>
     </Stack>
