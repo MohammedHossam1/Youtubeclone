@@ -4,7 +4,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import Videos from "./Videos";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 const Feed = () => {
-  const [selectedCategory, setSelectedCategory] = useState("New");
+  const [selectedCategory, setSelectedCategory] = useState("Mashary");
   const [videos, setVideos] = useState([]);
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
